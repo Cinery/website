@@ -1,9 +1,17 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
+.disabled-onepage-scroll section {
+
+    overflow: inherit !important;
+
+}
+
 section {
 
     padding-top: 50px;
+
+    overflow: hidden;
 
 }
 
@@ -78,3 +86,16 @@ h1.cinery {
     display: inline;
 
 }
+
+img.feature-screenshot {
+
+    border-radius: 5px;
+
+    border: 1px solid black;
+
+    width: 80%;
+
+    margin: 10%
+
+}
+
