@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $(".main").onepage_scroll({
+                sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+                easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
+                // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+                animationTime: 1000, // AnimationTime let you define how long each section takes to animate
+                pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+                updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+                beforeMove: function(index) {}, // This option accepts a callback function. The function will be called before the page moves.
+                afterMove: function(index) {}, // This option accepts a callback function. The function will be called after the page moves.
+                loop: true, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+                keyboard: true, // You can activate the keyboard controls
+                responsiveFallback: 600 // You can fallback to normal page scroll by defining the width of the browser in which
+                // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
+                // the browser's width is less than 600, the fallback will kick in.
+            });
+        });
+
+        var scrollToPage = function(page) {
+            $(".main").moveTo(page);
+        };
+    </script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <section id="page1">
+            <div class="row">
+                <div class="small-12 medium-6 columns" id="claim">
+                    <h1 class="cinery">Cinery</h1>&nbsp;empfiehlt dir
+                    <nobr>5 sehenswerte Filme</nobr>&nbsp; und bietet dir das aktuelle Kinoprogramm.
+                    <center style="margin-top: 10%">
+                        <img src="img/Download_on_the_App_Store_Badge_DE_135x40.svg" width="250" />
+                    </center>
+                </div>
+                <div class="small-12 medium-6 columns">
+
+
+                    <img data-interchange="[img/iPhone_5s_Startscreen.png, (default)], [img/iPhone_5s_Startscreen_small.png, (small)]">
+                    <noscript>
+                        <img id="iPhone_StartScreen" src="img/iPhone_5s_Startscreen.png">
+                    </noscript>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section>
+            <!--                        <p>Cinery bringt das aktuelle Kinoprogramm für Deutschland auf dein iPhone. Die App ermöglicht es dir schnell und einfach Kinovorstellungen in deiner Nähe zu finden. Zu jedem Film werden Trailer, Länge, Erscheinungsdatum, FSK-Freigabe und ein kurzer Beschreibungstext angezeigt. Zudem musst du nie wieder nach guten Filmen suchen. Cinery schlägt dir 5 Filme vor, die dir gefallen werden. Alle Funktionen im Überblick-->
+
+
+            <div class="row">
+                <div class="large-4 medium-4 columns">
+                    <img src="img/feature-screenshot__recommendation.png" class="feature-screenshot" />
+                    <h4>+ Sehenswerte Filme</h4>
+                    <p>Samstagabend, Lust auf Kino und keine Idee, welche Filme gut sind? Cinery zeigt dir 5 Filme, die definitiv sehenswert sind.</p>
+                </div>
+
+                <div class="large-4 medium-4 columns ">
+                    <img src="img/feature-screenshot__gonow.png" class="feature-screenshot" />
+                    <h4>+ Jetzt in deiner Nähe</h4>
+                    <p>Cinery hilft ideal bei einen spontanen Kinobesuch. Mithilfe dieser Funktion werden dir alle in den nächsten Stunden laufenden Filme angezeigt.</p>
+                </div>
+
+                <div class="large-4 medium-4 columns ">
+                    <img src="img/feature-screenshot__map.png" class="feature-screenshot" />
+                    <h4>+ Kinos in der Umgebung</h4>
+                    <p>Übersichtlich auf einer Karte kannst du alle Kinos in deiner Umgebung angezeigt. Durch einfaches Herauszommen auf der Karte kannst du alle Kinos deutschlandweit ansehen.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section>
+
+            <div class="row">
+
+
+                <div class="large-4  large-offset-2 medium-offset-2 medium-4  columns ">
+                    <img src="img/feature-screenshot__movie_search.png" class="feature-screenshot" />
+
+                    <h4>+ Aktuelle Filme</h4>
+                    <p>Eine übersichtliche durchsuchbare Liste führt alle laufenden Filme auf. Mit der Suchfunktion findest du schnell jeden Film - selbst wenn er nur in wenigen Kinos läuft.</p>
+                </div>
+                <div class="large-4 medium-4 end columns ">
+                    <img src="img/feature-screenshot__calendar.png" class="feature-screenshot" />
+
+                    <h4>+ Kinovorstellungen in Kalender-Ansicht</h4>
+                    <p>Jede Kinovorstellung kann im eigenen Kalender betrachtet werden. So kannst du direkt sehen, ob du Zeit hast. Danach kannst du einen Termin mit Film, Zeit und Kino inklusive Adresse in deinen Kalender eintragen.</p>
+                    </p>
+                </div>
+
+
+
+            </div>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+    <!--    <script src="js/vendor/jquery.js "></script>-->
+    <script src="js/foundation.min.js "></script>
+    <script>
+        $(document).foundation();
+    </script>
+
+
+</body>
+
+</html>
