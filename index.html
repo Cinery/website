@@ -50,6 +50,57 @@
 
 <body>
 
+    <div class="fixed">
+
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1>
+                        <a href="#" class="cinery">Cinery</a>
+                    </h1>
+                </li>
+                <li class="toggle-topbar menu-icon">
+                    <a href="#">Menu</a>
+                </li>
+            </ul>
+
+
+
+            <div class="top-bar-section">
+
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li>
+                        <a href="#">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="#">Impressum</a>
+                    </li>
+                </ul>
+
+
+                <!-- Center Nav Section -->
+                <ul>
+                    <li>
+                        <a href="#1" onclick="scrollToPage(1);">Cinery</a>
+                    </li>
+                    <li>
+                        <a href="#2" onclick="scrollToPage(2);">page 2</a>
+                    </li>
+                    <li>
+                        <a href="#3" onclick="scrollToPage(3);">page 3</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </nav>
+    </div>
+
+
+
+
     <div class="main">
 
         <section id="page1">
@@ -83,19 +134,38 @@
 
 
             <div class="row">
-                <div class="large-4 medium-4 columns">
+
+                <div class="large-4 large-offset-2 medium-offset-2 medium-4 columns">
                     <img src="img/feature-screenshot__recommendation.png" class="feature-screenshot" />
                     <h4>+ Sehenswerte Filme</h4>
                     <p>Samstagabend, Lust auf Kino und keine Idee, welche Filme gut sind? Cinery zeigt dir 5 Filme, die definitiv sehenswert sind.</p>
                 </div>
 
-                <div class="large-4 medium-4 columns ">
+                <div class="large-4 medium-4 end columns ">
+                    <img src="img/feature-screenshot__movie_search.png" class="feature-screenshot" />
+
+                    <h4>+ Aktuelle Filme</h4>
+                    <p>Eine übersichtliche durchsuchbare Liste führt alle laufenden Filme auf. Mit der Suchfunktion findest du schnell jeden Film - selbst wenn er nur in wenigen Kinos läuft.</p>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <div class="row">
+
+                <div class="large-4 large-offset-2 medium-offset-2 medium-4 columns">
                     <img src="img/feature-screenshot__gonow.png" class="feature-screenshot" />
                     <h4>+ Jetzt in deiner Nähe</h4>
                     <p>Cinery hilft ideal bei einen spontanen Kinobesuch. Mithilfe dieser Funktion werden dir alle in den nächsten Stunden laufenden Filme angezeigt.</p>
                 </div>
 
-                <div class="large-4 medium-4 columns ">
+                <div class="large-4 medium-4 end columns ">
                     <img src="img/feature-screenshot__map.png" class="feature-screenshot" />
                     <h4>+ Kinos in der Umgebung</h4>
                     <p>Übersichtlich auf einer Karte kannst du alle Kinos in deiner Umgebung angezeigt. Durch einfaches Herauszommen auf der Karte kannst du alle Kinos deutschlandweit ansehen.</p>
@@ -107,20 +177,11 @@
 
 
 
-
-
         <section>
 
             <div class="row">
 
-
-                <div class="large-4  large-offset-2 medium-offset-2 medium-4  columns ">
-                    <img src="img/feature-screenshot__movie_search.png" class="feature-screenshot" />
-
-                    <h4>+ Aktuelle Filme</h4>
-                    <p>Eine übersichtliche durchsuchbare Liste führt alle laufenden Filme auf. Mit der Suchfunktion findest du schnell jeden Film - selbst wenn er nur in wenigen Kinos läuft.</p>
-                </div>
-                <div class="large-4 medium-4 end columns ">
+                <div class="large-4 medium-4 large-centered medium-centered columns">
                     <img src="img/feature-screenshot__calendar.png" class="feature-screenshot" />
 
                     <h4>+ Kinovorstellungen in Kalender-Ansicht</h4>
