@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cinery - STOP TRACKING ME</title>
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+
+    <!-- see https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#optout -->
+    <script>
+        // Set to the same value as the web property used on the site
+        var gaProperty = 'UA-49159457-1';
+
+         // Disable tracking if the opt-out cookie exists.
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+        }
+
+         // Opt-out function
+        function gaOptout() {
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+        }
+    </script>
+
+</head>
+
+<body onLoad="javascript:gaOptout();">
+
+    <h1>~stop tracking me~</h1>
+
+    <h2>Remove My Traffic from Google Analytics for this Website</h2>
+    <p>Visit this page on every computer, device (tablet, mobile), chrome profile, etc and for all browsers you use on those devices.</p>
+
+</body>
+
+</html>
