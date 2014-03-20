@@ -9,9 +9,23 @@
 
 section {
 
+    overflow: hidden;
+
+    display: table;
+
+}
+
+section#page1 {
+
     padding-top: 50px;
 
-    overflow: hidden;
+}
+
+section .vertical-center-container {
+
+    display: table-cell;
+
+    vertical-align: middle;
 
 }
 
