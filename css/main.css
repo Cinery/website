@@ -145,6 +145,14 @@ img.feature-screenshot {
 
 }
 
+.contact a,
+
+.contact a:hover {
+
+    color: white;
+
+}
+
 .webicon.verylarge {
 
     width: 64px;
