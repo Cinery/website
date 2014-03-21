@@ -81,6 +81,8 @@ section.page1 * {
 
     line-height: 3.2rem;
 
+    text-align: center;
+
 }
 
 .cinery {
@@ -98,6 +100,24 @@ h1.cinery {
     color: white !important;
 
     display: inline;
+
+}
+
+/*feature pages*/
+
+.feature p {
+
+    text-align: justify;
+
+    margin-left: 2%;
+
+    margin-right: 2%;
+
+}
+
+.feature h4 {
+
+    text-align: center;
 
 }
 
@@ -170,6 +190,7 @@ img.feature-screenshot {
 .appstore-button {
 
     font-size: 1.8rem;
+
     display: inline-block;
 
     width: 250px;
