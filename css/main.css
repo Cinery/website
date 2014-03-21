@@ -169,7 +169,8 @@ img.feature-screenshot {
 
 .appstore-button {
 
-    display: block;
+    font-size: 1.8rem;
+    display: inline-block;
 
     width: 250px;
 
