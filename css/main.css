@@ -5,6 +5,14 @@
 
     overflow: inherit !important;
 
+    height: auto !important;
+
+}
+
+.disabled-onepage-scroll section.contact {
+
+    margin-top: 20%;
+
 }
 
 section {
