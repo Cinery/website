@@ -11,8 +11,6 @@ section {
 
     overflow: hidden;
 
-    display: table;
-
 }
 
 section#page1 {
@@ -22,6 +20,16 @@ section#page1 {
 }
 
 section .vertical-center-container {
+
+    display: table;
+
+    height: 100%;
+
+    width: 100%;
+
+}
+
+section .vertical-center {
 
     display: table-cell;
 
