@@ -5,18 +5,66 @@
 
     overflow: inherit !important;
 
+    height: auto !important;
+
+}
+
+.disabled-onepage-scroll section.contact {
+
+    margin-top: 20%;
+
 }
 
 section {
-
-    padding-top: 50px;
 
     overflow: hidden;
 
 }
 
+section#page1 {
+
+    padding-top: 50px;
+
+    
+}
+
+section .vertical-center-container {
+
+    display: table;
+
+    height: 100%;
+
+    width: 100%;
+
+}
+
+section .vertical-center {
+
+    display: table-cell;
+
+    vertical-align: middle;
+
+}
+
 body {
 
+
+    background-image: url(../img/background.jpg);
+    
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    
+    background-position: bottom;
+
+    color: white !important;
+
+}
+
+section.feature {
+    
     background-image: -webkit-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
 
     background-image: -moz-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
@@ -27,9 +75,6 @@ body {
 
     background-repeat: no-repeat;
 
-    background-attachment: fixed;
-
-    color: white !important;
 
 }
 
@@ -59,13 +104,15 @@ section.page1 * {
 
 #claim {
 
-    margin-top: 19%;
+    margin-top: 10%;
 
     position: relative;
 
     font-size: 1.8rem;
 
     line-height: 3.2rem;
+
+    text-align: center;
 
 }
 
@@ -87,6 +134,24 @@ h1.cinery {
 
 }
 
+/*feature pages*/
+
+.feature p {
+
+    text-align: justify;
+
+    margin-left: 2%;
+
+    margin-right: 2%;
+
+}
+
+.feature h4 {
+
+    text-align: center;
+
+}
+
 img.feature-screenshot {
 
     border-radius: 5px;
@@ -99,3 +164,156 @@ img.feature-screenshot {
 
 }
 
+.top-bar-section ul {
+
+    display: table;
+
+    margin: 0 auto;
+
+}
+
+.top-bar-section ul li {
+
+    display: table-cell;
+
+}
+
+/* contact section*/
+
+.contact p {
+
+    text-align: center;
+
+}
+
+.contact h2 {
+
+    text-align: center;
+
+    margin-top: 3em;
+
+    margin-bottom: 2em;
+
+}
+
+.contact a,
+
+.contact a:hover {
+
+    color: white;
+
+}
+
+.webicon.verylarge {
+
+    width: 64px;
+
+    height: 64px;
+
+    -moz-border-radius: 9px;
+
+    -webkit-border-radius: 9px;
+
+    border-radius: 9px;
+
+}
+
+.appstore-button {
+
+    font-size: 1.8rem;
+
+    display: inline-block;
+
+    width: 250px;
+
+    color: white;
+
+    margin: 10px;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    background-color: #77357A;
+
+    background-image: url("appstore-button-icons/apple.png");
+
+    background-repeat: no-repeat;
+
+    background-position: 20px center;
+
+    border: 1px solid #fff;
+
+}
+
+.appstore-button:hover {
+
+    border: 1px solid #aaa;
+
+    background-color: #632C66;
+
+    color: white;
+
+    /*    border: 1px solid #009E82;*/
+
+}
+
+.appstore-button:active {
+
+    color: #ccc;
+
+}
+
+.appstore-button * {
+
+    margin-left: 70px;
+
+}
+
+.appstore-button small {
+
+    text-align: left;
+
+    display: block;
+
+    line-height: 1em;
+
+    margin-top: 0.3em;
+
+}
+
+.appstore-button span {
+
+    display: block;
+
+    text-align: left;
+
+    line-height: 1.3em;
+
+    margin-bottom: 0.2em;
+
+}
+
+/* imprint */
+
+#imprint {
+
+    padding: 10%;
+
+}
+
+#imprint h1 {
+
+    text-align: center;
+
+}
+
+a.two-row {
+
+    margin-top: 0.5em;
+
+    font-size: 0.7em !important;
+
+    line-height: 1.6em !important;
+
+}

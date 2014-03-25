@@ -3,42 +3,70 @@
 
 <head>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <meta name="google-site-verification" content="sDDCyiKchBRgllJ-W_EpYckGA_apWWVPoTQ8B-NFrM4" />
     <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>Foundation | Welcome</title>
+    <title>Cinery - Kinoprogramm-App für Deutschland</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
 
+    <link rel="stylesheet" href="css/webicons.css" />
     <link rel="stylesheet" href="css/main.css" />
 
+    
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<!--
     <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
     <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+-->
 
+
+
+    <!-- facebook sharing data -->
+    <meta property="og:image" content="http://www.cinery.de/img/cinery_app-icon_256x256.png" />
+    <meta property="og:url" content="http://www.cinery.de/" />
+    <meta property="og:title" content="Cinery - Die Kinoprogramm-App für Deutschland" />
+    <meta property="og:description" content="Cinery empfiehlt dir 5 sehenswerte Filme und bietet dir das aktuelle Kinoprogramm in deiner Nähe. Des Weiteren werden dir laufende Filme und alle Kinos in deiner Umgebung auf einem Blick angezeigt." />
 
 
     <script>
-        $(document).ready(function() {
-            $(".main").onepage_scroll({
-                sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
-                easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
-                // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-                animationTime: 1000, // AnimationTime let you define how long each section takes to animate
-                pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
-                updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-                beforeMove: function(index) {}, // This option accepts a callback function. The function will be called before the page moves.
-                afterMove: function(index) {}, // This option accepts a callback function. The function will be called after the page moves.
-                loop: true, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-                keyboard: true, // You can activate the keyboard controls
-                responsiveFallback: 600 // You can fallback to normal page scroll by defining the width of the browser in which
-                // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
-                // the browser's width is less than 600, the fallback will kick in.
-            });
-        });
-
-        var scrollToPage = function(page) {
+        function scrollToPage(page) {
             $(".main").moveTo(page);
         };
+
+        function isInPagesMode() {
+            return $(document.body).attr('class').indexOf('disabled-onepage-scroll') == -1;
+        };
+
+        $(document).ready(function() {
+//            $(".main").onepage_scroll({
+//                sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+//                easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
+//                // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+//                animationTime: 1000, // AnimationTime let you define how long each section takes to animate
+//                pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+//                updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+//                beforeMove: function(index) {}, // This option accepts a callback function. The function will be called before the page moves.
+//                afterMove: function(index) {}, // This option accepts a callback function. The function will be called after the page moves.
+//                loop: true, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+//                keyboard: true, // You can activate the keyboard controls
+//                responsiveFallback: 600 // You can fallback to normal page scroll by defining the width of the browser in which
+//                // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
+//                // the browser's width is less than 600, the fallback will kick in.
+//            });
+
+            $(".nav-button").on('click', function(e) {
+                if (isInPagesMode()) {
+                    e.preventDefault();
+                    var href = $($(this).attr('href')).selector;
+                    var page = href.replace('#', '');
+                    scrollToPage(page);
+                }
+            });
+
+        });
     </script>
 
 
@@ -50,21 +78,105 @@
 
 <body>
 
-    <div class="main">
+    <div class="fixed">
+
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1>
+                        <a href="#" class="cinery">Cinery</a>
+                    </h1>
+                </li>
+                <li class="toggle-topbar menu-icon">
+                    <a href="#">Menu</a>
+                </li>
+            </ul>
+
+
+
+            <div class="top-bar-section">
+
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li>
+                        <a href="#5" class="nav-button">Kontakt</a>
+                    </li>
+                    <li>
+                        <a class="two-row" href="impressum-datenschutz.html">Impressum &amp;
+                            <br>Datenschutz</a>
+                    </li>
+                </ul>
+
+
+                <!-- Center Nav Section -->
+                <ul>
+                    <li>
+                        <a href="#1" class="nav-button">Cinery</a>
+                    </li>
+                    <li>
+                        <a href="#2" class="nav-button">Filme</a>
+                    </li>
+                    <li>
+                        <a href="#3" class="nav-button">Kinos</a>
+                    </li>
+                    <li>
+                        <a href="#4" class="nav-button">und mehr</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </nav>
+    </div>
+
+
+
+
+    <div class="main" itemscope itemtype="http://schema.org/SoftwareApplication">
+        <meta itemprop="name" content "Cinery"/>
+        <meta itemprop="description" content "Cinery empfiehlt dir 5 sehenswerte Filme und bietet dir das aktuelle Kinoprogramm in deiner Nähe. Des Weiteren werden dir laufende Filme und alle Kinos in deiner Umgebung auf einem Blick angezeigt."/>
+        <meta property="url" content="http://www.cinery.de/" />
+        <meta itemprop="image" content="http://www.cinery.de/img/cinery_app-icon_256x256.png" />
+        <meta itemprop="inLanguage" content="en-EN, de-DE" />
+        <meta itemprop="datePublished" content="2014-03-27" />
+        <meta itemprop="softwareVersion" content="V1.0" />
+        <meta itemprop="applicationCategory" content="LifestyleApplication" />
+        <meta itemprop="softwareApplicationSubCategory" content="EntertainmentApplication " />
+        <meta itemprop="softwareApplicationSubCategory" content="MultimediaApplicatio" />
+        <meta itemprop="countriesSupported" content="Germnay" />
+        <meta itemprop="operatingSystem" content="iOS 7" />
+        <meta itemprop="device" content="iPhone, iPad, iPod Touch" />
+
+
+
 
         <section id="page1">
+            <a name="1"></a>
             <div class="row">
                 <div class="small-12 medium-6 columns" id="claim">
                     <h1 class="cinery">Cinery</h1>&nbsp;empfiehlt dir
                     <nobr>5 sehenswerte Filme</nobr>&nbsp; und bietet dir das aktuelle Kinoprogramm.
                     <center style="margin-top: 10%">
-                        <img src="img/Download_on_the_App_Store_Badge_DE_135x40.svg" width="250" />
+
+                        <p class="cinery">ab 27.03.2014:</p>
+
+
+                        <a class="appstore-button" itemprop="downloadURL" href="https://itunes.apple.com/de/app/cinery-kinoprogramm-fur-deutschland/id835933514?l=de&ls=1&mt=8
+" target="_blank">
+                            <small>Kostenlos im</small>
+                            <span>App Store</span>
+                        </a>
+
+
+                        <p style="font-weight: lighter;letter-spacing: 0.1em;">kostenlos bis zum 22.04.2014</p>
+
                     </center>
                 </div>
-                <div class="small-12 medium-6 columns">
+                <div class="small-12 medium-6 columns" style="text-align: center;">
 
 
-                    <img data-interchange="[img/iPhone_5s_Startscreen.png, (default)], [img/iPhone_5s_Startscreen_small.png, (small)]">
+                    <img data-interchange="[img/iPhone_5s_Startscreen.png, (default)]">
                     <noscript>
                         <img id="iPhone_StartScreen" src="img/iPhone_5s_Startscreen.png">
                     </noscript>
@@ -78,78 +190,136 @@
 
 
 
-        <section>
+        <section class="feature">
+            <a name="2"></a>
+
             <!--                        <p>Cinery bringt das aktuelle Kinoprogramm für Deutschland auf dein iPhone. Die App ermöglicht es dir schnell und einfach Kinovorstellungen in deiner Nähe zu finden. Zu jedem Film werden Trailer, Länge, Erscheinungsdatum, FSK-Freigabe und ein kurzer Beschreibungstext angezeigt. Zudem musst du nie wieder nach guten Filmen suchen. Cinery schlägt dir 5 Filme vor, die dir gefallen werden. Alle Funktionen im Überblick-->
 
+            <div class="vertical-center-container">
+                <div class="row vertical-center">
 
-            <div class="row">
-                <div class="large-4 medium-4 columns">
-                    <img src="img/feature-screenshot__recommendation.png" class="feature-screenshot" />
-                    <h4>+ Sehenswerte Filme</h4>
-                    <p>Samstagabend, Lust auf Kino und keine Idee, welche Filme gut sind? Cinery zeigt dir 5 Filme, die definitiv sehenswert sind.</p>
+                    <div class="large-4 large-offset-2 medium-offset-2 medium-4 columns">
+                        <img itemprop="screenshot" src="img/feature-screenshot__recommendation.png" class="feature-screenshot" />
+                        <h4>Sehenswerte Filme</h4>
+                        <p>Samstagabend, Lust auf Kino und keine Idee, welche Filme gut sind? Cinery zeigt dir 5 Filme, die definitiv sehenswert sind.</p>
+                    </div>
+
+                    <div class="large-4 medium-4 end columns ">
+                        <img itemprop="screenshot" src="img/feature-screenshot__movie_search.png" class="feature-screenshot" />
+
+                        <h4>Aktuelle Filme</h4>
+                        <p>Eine übersichtliche Liste führt alle laufenden Filme auf. Mit der Suchfunktion findest du schnell jeden Film - selbst wenn dieser nur in wenigen Kinos läuft.</p>
+                    </div>
+
+
+
                 </div>
-
-                <div class="large-4 medium-4 columns ">
-                    <img src="img/feature-screenshot__gonow.png" class="feature-screenshot" />
-                    <h4>+ Jetzt in deiner Nähe</h4>
-                    <p>Cinery hilft ideal bei einen spontanen Kinobesuch. Mithilfe dieser Funktion werden dir alle in den nächsten Stunden laufenden Filme angezeigt.</p>
-                </div>
-
-                <div class="large-4 medium-4 columns ">
-                    <img src="img/feature-screenshot__map.png" class="feature-screenshot" />
-                    <h4>+ Kinos in der Umgebung</h4>
-                    <p>Übersichtlich auf einer Karte kannst du alle Kinos in deiner Umgebung angezeigt. Durch einfaches Herauszommen auf der Karte kannst du alle Kinos deutschlandweit ansehen.</p>
-                </div>
-
             </div>
 
+            <a name="3"></a>
+
+            <div class="vertical-center-container">
+                <div class="row vertical-center">
+
+                    <div class="large-4 large-offset-2 medium-offset-2 medium-4 columns">
+                        <img itemprop="screenshot" src="img/feature-screenshot__gonow.png" class="feature-screenshot" />
+                        <h4>Jetzt in deiner Nähe</h4>
+                        <p>Perfekt für den spontanen Kinobesuch. Mithilfe dieser Funktion werden dir auf einem Blick alle Filme angezeigt, die in den nächsten Stunden laufen.</p>
+                    </div>
+
+                    <div class="large-4 medium-4 end columns ">
+                        <img itemprop="screenshot" src="img/feature-screenshot__map.png" class="feature-screenshot" />
+                        <h4>Kinos in der Umgebung</h4>
+                        <p>Übersichtlich auf einer Karte werden dir alle Kinos in deiner Umgebung angezeigt. Durch einfaches Herauszoomen kannst du sogar alle Kinos deutschlandweit ansehen.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <a name="4"></a>
+
+            <div class="vertical-center-container">
+                <div class="row vertical-center">
+
+                    <div class="large-4 medium-4 large-centered medium-centered columns">
+                        <img itemprop="screenshot" src="img/feature-screenshot__calendar.png" class="feature-screenshot" />
+
+                        <h4>Kinovorstellungen in Kalender-Ansicht</h4>
+                        <p>Jede Kinovorstellung kann im eigenen Kalender betrachtet werden. So kannst du direkt sehen, ob du Zeit hast. Danach kann der Termin mit Film, Zeit und Kino inklusive Adresse, in deinem Kalender einfach und schnell eintragen werden.</p>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
         </section>
 
 
 
+        <section class="contact">
+            <a name="5"></a>
+
+            <div class="vertical-center-container">
+                <div class="vertical-center">
+                    <div style="text-align: center;">
+                        <div style="display: inline-block; font-size: 1.5rem; padding-right: 1%; position: relative; top: -15px;">Jetzt
+                            <span class="cinery">&nbsp;Cinery&nbsp;</span>laden:
+                        </div>
 
 
-        <section>
 
-            <div class="row">
+                        <a class="appstore-button" itemprop="downloadURL" href="https://itunes.apple.com/de/app/cinery-kinoprogramm-fur-deutschland/id835933514?l=de&ls=1&mt=8
+" target="_blank">
+                            <small>Kostenlos im</small>
+                            <span>App Store</span>
+                        </a>
+
+                    </div>
+
+                    <h2>Bleibe in Kontakt</h2>
 
 
-                <div class="large-4  large-offset-2 medium-offset-2 medium-4  columns ">
-                    <img src="img/feature-screenshot__movie_search.png" class="feature-screenshot" />
+                    <div class="row">
+                        <div class="small-6 medium-3 columns">
+                            <p>
+                                <a href="https://www.facebook.com/CineryApp" target="_blank" class="webicon fc-webicon facebook verylarge">Like us on Facebook</a>
+                                <br>
+                                <a href="https://www.facebook.com/CineryApp" target="_blank">CineryApp</a>
+                            </p>
+                        </div>
 
-                    <h4>+ Aktuelle Filme</h4>
-                    <p>Eine übersichtliche durchsuchbare Liste führt alle laufenden Filme auf. Mit der Suchfunktion findest du schnell jeden Film - selbst wenn er nur in wenigen Kinos läuft.</p>
+                        <div class="small-6 medium-3 columns">
+                            <p>
+                                <a href="https://www.twitter.com/CineryApp" target="_blank" class="webicon fc-webicon twitter verylarge">Follow us on Twitter</a>
+                                <br>
+                                <a href="https://www.twitter.com/CineryApp" target="_blank">@CineryApp</a>
+                            </p>
+                        </div>
+
+                        <div class="small-6 medium-3 columns">
+                            <p>
+                                <a href="https://plus.google.com/u/0/b/115948675375952955366/115948675375952955366/posts" target="_blank" class="webicon fc-webicon googleplus verylarge">Find us on Gooogle Plus</a>
+                                <br>
+                                <a href="https://plus.google.com/u/0/b/115948675375952955366/115948675375952955366/posts" target="_blank">Cinery</a>
+                            </p>
+                        </div>
+
+                        <div class="small-6 medium-3 columns end">
+                            <p>
+                                <a href="mailto:hallo@cinery.de?subject=Kontakt%20via%20cinery.de" class="webicon fc-webicon mail verylarge">Send us an e-mail</a>
+                                <br>
+                                <a href="mailto:hallo@cinery.de?subject=Kontakt%20via%20cinery.de">hallo@cinery.de</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="large-4 medium-4 end columns ">
-                    <img src="img/feature-screenshot__calendar.png" class="feature-screenshot" />
-
-                    <h4>+ Kinovorstellungen in Kalender-Ansicht</h4>
-                    <p>Jede Kinovorstellung kann im eigenen Kalender betrachtet werden. So kannst du direkt sehen, ob du Zeit hast. Danach kannst du einen Termin mit Film, Zeit und Kino inklusive Adresse in deinen Kalender eintragen.</p>
-                    </p>
-                </div>
-
-
-
             </div>
-
-
-    </div>
-    </div>
-    </div>
-    </div>
-
-
-
-    </section>
-
-
-
-
+        </section>
 
 
 
     </div>
-    </div>
+    <!-- end of div class=main -->
 
     <!--    <script src="js/vendor/jquery.js "></script>-->
     <script src="js/foundation.min.js "></script>
@@ -157,6 +327,30 @@
         $(document).foundation();
     </script>
 
+    <script>
+        // Set to the same value as the web property used on the site
+        var gaProperty = 'UA-49159457-1';
+
+         // Disable tracking if the opt-out cookie exists.
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+        }
+
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', gaProperty, 'cinery.de');
+        ga('send', 'pageview');
+    </script>
 
 </body>
 
