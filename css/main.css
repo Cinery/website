@@ -25,6 +25,7 @@ section#page1 {
 
     padding-top: 50px;
 
+    
 }
 
 section .vertical-center-container {
@@ -47,6 +48,23 @@ section .vertical-center {
 
 body {
 
+
+    background-image: url(../img/background.jpg);
+    
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    
+    background-position: bottom;
+
+    color: white !important;
+
+}
+
+section.feature {
+    
     background-image: -webkit-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
 
     background-image: -moz-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
@@ -57,9 +75,6 @@ body {
 
     background-repeat: no-repeat;
 
-    background-attachment: fixed;
-
-    color: white !important;
 
 }
 
