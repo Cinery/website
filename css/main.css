@@ -26,7 +26,7 @@ section .vertical-center {
     vertical-align: middle;
 }
 
-body {
+body, .imprint > h1 {
     background-image: url(../img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body {
 
 
 
-#features {
+#features, .imprint section {
     margin-top: 2.5em;
     padding-top: 0.5em;
     padding-bottom: 2.5em;
@@ -184,15 +184,6 @@ img.feature-screenshot {
     margin-bottom: 0.2em;
 }
 
-/* imprint */
-
-#imprint {
-    padding: 10%;
-}
-
-#imprint h1 {
-    text-align: center;
-}
 
 a.two-row {
     margin-top: 0.5em;
@@ -232,3 +223,20 @@ section#contact {
     background-color: #111; 
     padding-bottom: 10%;
 }
+
+
+/* imprint */
+
+.imprint section {
+    padding: 10%;
+    margin-bottom: 0;
+}
+
+.imprint h1 {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;  
+}
+
+
+
