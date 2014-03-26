@@ -1,319 +1,219 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lobster);
-
 .disabled-onepage-scroll section {
-
     overflow: inherit !important;
-
     height: auto !important;
-
 }
 
 .disabled-onepage-scroll section.contact {
-
     margin-top: 20%;
-
 }
 
 section {
-
     overflow: hidden;
-
 }
 
 section#page1 {
-
-    padding-top: 50px;
-
-    
+    padding-top: 50px;    
 }
 
 section .vertical-center-container {
-
     display: table;
-
     height: 100%;
-
     width: 100%;
-
 }
 
 section .vertical-center {
-
     display: table-cell;
-
     vertical-align: middle;
-
 }
 
 body {
-
-
     background-image: url(../img/background.jpg);
-    
     background-size: cover;
-
     background-repeat: no-repeat;
-
     background-attachment: fixed;
-    
     background-position: bottom;
-
     color: white !important;
+}
 
+/** FEATURES **/
+
+
+
+#features {
+    margin-top: 2.5em;
+    padding-top: 0.5em;
+    padding-bottom: 2.5em;
+    margin-bottom: 2.5em;
+    background-image: -webkit-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
+    background-image: -moz-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
+    background-image: -o-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
+    background-image: linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
+    background-repeat: no-repeat;
 }
 
 section.feature {
-    
-    background-image: -webkit-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
-
-    background-image: -moz-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
-
-    background-image: -o-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
-
-    background-image: linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
-
-    background-repeat: no-repeat;
-
-
+    margin-top: 2em;
+    margin-bottom: 6em;
 }
 
+.feature h2 {
+    margin-top: 30%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 40.063em) {
+    .feature h2 {
+        margin-top: 3%;
+    }
+}
+
+.feature p {
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    line-height: 1.4em;
+}
+
+
+
+
 ul.onepage-pagination li a:before {
-
     background: rgba(204, 204, 204, 0.85);
-
 }
 
 ul.onepage-pagination li a.active:before {
-
     border-color: rgba(204, 204, 204, 0.85);
-
 }
 
 section.page1 * {
-
     color: white !important;
-
 }
 
 #iPhone_StartScreen {
-
     position: relative;
-
 }
 
 #claim {
-
     margin-top: 10%;
-
     position: relative;
-
     font-size: 1.8rem;
-
     line-height: 3.2rem;
-
     text-align: center;
-
 }
 
 .cinery {
-
     font-family: 'Lobster';
-
     font-size: 1.3em;
-
     letter-spacing: 0.2rem;
-
 }
 
 h1.cinery {
-
     color: white !important;
-
     display: inline;
-
 }
 
-/*feature pages*/
 
-.feature p {
-
-    text-align: justify;
-
-    margin-left: 2%;
-
-    margin-right: 2%;
-
-}
-
-.feature h4 {
-
-    text-align: center;
-
-}
 
 img.feature-screenshot {
-
-    border-radius: 5px;
-
-    border: 1px solid black;
-
     width: 80%;
-
-    margin: 10%
-
+    max-width: 250px;
+    margin: 10%;
 }
 
 .top-bar-section ul {
-
     display: table;
-
     margin: 0 auto;
-
 }
 
 .top-bar-section ul li {
-
     display: table-cell;
-
 }
 
 /* contact section*/
 
 .contact p {
-
     text-align: center;
-
 }
 
 .contact h2 {
-
     text-align: center;
-
     margin-top: 3em;
-
     margin-bottom: 2em;
-
 }
 
 .contact a,
-
 .contact a:hover {
-
     color: white;
-
 }
 
 .webicon.verylarge {
-
     width: 64px;
-
     height: 64px;
-
     -moz-border-radius: 9px;
-
     -webkit-border-radius: 9px;
-
     border-radius: 9px;
-
 }
 
 .appstore-button {
-
     font-size: 1.8rem;
-
     display: inline-block;
-
     width: 250px;
-
     color: white;
-
     margin: 10px;
-
     border-radius: 7px;
-
     overflow: hidden;
-
     background-color: #77357A;
-
     background-image: url("appstore-button-icons/apple.png");
-
     background-repeat: no-repeat;
-
     background-position: 20px center;
-
     border: 1px solid #fff;
-
 }
 
 .appstore-button:hover {
-
     border: 1px solid #aaa;
-
     background-color: #632C66;
-
     color: white;
-
     /*    border: 1px solid #009E82;*/
 
 }
 
 .appstore-button:active {
-
     color: #ccc;
-
 }
 
 .appstore-button * {
-
     margin-left: 70px;
-
 }
 
 .appstore-button small {
-
     text-align: left;
-
     display: block;
-
     line-height: 1em;
-
     margin-top: 0.3em;
-
 }
 
 .appstore-button span {
-
     display: block;
-
     text-align: left;
-
     line-height: 1.3em;
-
     margin-bottom: 0.2em;
-
 }
 
 /* imprint */
 
 #imprint {
-
     padding: 10%;
-
 }
 
 #imprint h1 {
-
     text-align: center;
-
 }
 
 a.two-row {
-
     margin-top: 0.5em;
-
     font-size: 0.7em !important;
-
     line-height: 1.6em !important;
-
 }
