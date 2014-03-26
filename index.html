@@ -15,20 +15,13 @@
     <link rel="stylesheet" href="css/webicons.css" />
     <link rel="stylesheet" href="css/main.css" />
 
-    
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-<!--
-    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
--->
 
 
-
-    
     <meta name="description" content="Cinery empfiehlt dir 5 sehenswerte Filme und bietet dir das aktuelle Kinoprogramm in deiner Nähe.">
     <meta name="keywords" lang="de" content="Kino, App, Kinoprogramm, Film, Filme" />
     <meta name="author" content="Kinofreunde GbR" />
-    
+
     <!-- facebook sharing data -->
     <meta property="og:image" content="http://www.cinery.de/img/cinery_app-icon_256x256.png" />
     <meta property="og:url" content="http://www.cinery.de/" />
@@ -37,25 +30,14 @@
 
 
     <script>
-        function scrollToPage(page) {
-            $(".main").moveTo(page);
-        };
-
-        function isInPagesMode() {
-            return $(document.body).attr('class').indexOf('disabled-onepage-scroll') == -1;
-        };
-
         $(document).ready(function() {
-
             $(".nav-button").on('click', function(e) {
-                if (isInPagesMode()) {
-                    e.preventDefault();
-                    var href = $($(this).attr('href')).selector;
-                    var page = href.replace('#', '');
-                    scrollToPage(page);
-                }
+                e.preventDefault();
+                var href = $($(this).attr('href')).selector;
+                jQuery('html, body').animate({
+                    scrollTop: $('a[name=' + href.replace('#', '') + ']').offset().top - 100.0
+                });
             });
-
         });
     </script>
 
@@ -74,7 +56,7 @@
             <ul class="title-area">
                 <li class="name">
                     <h1>
-                        <a href="#" class="cinery">Cinery</a>
+                        <a href="#1" class="nav-button cinery">Cinery</a>
                     </h1>
                 </li>
                 <li class="toggle-topbar menu-icon">
@@ -101,17 +83,18 @@
                 <!-- Center Nav Section -->
                 <ul>
                     <li>
-                        <a href="#1" class="nav-button">Cinery</a>
+                        <a href="#2" class="nav-button">alle Filme</a>
                     </li>
                     <li>
-                        <a href="#2" class="nav-button">Filme</a>
-                    </li>
-                    <li>
-                        <a href="#3" class="nav-button">Kinos</a>
+                        <a href="#3" class="nav-button">alle Kinos</a>
                     </li>
                     <li>
                         <a href="#4" class="nav-button">und mehr</a>
                     </li>
+                    <li>
+                        <a href="#1" class="nav-button">in einer App</a>
+                    </li>
+
                 </ul>
             </div>
 
@@ -225,6 +208,7 @@
             </section>
 
             <section class="feature">
+                <a name="3"></a>
                 <div class="vertical-center-container">
                     <div class="row vertical-center">
                         <div class="medium-offset-2 medium-4 medium-push-4 columns">
@@ -240,6 +224,7 @@
             </section>
 
             <section class="feature">
+                <a name="4"></a>
                 <div class="vertical-center-container">
                     <div class="row vertical-center">
                         <div class="medium-offset-2 medium-4 columns">

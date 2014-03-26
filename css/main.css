@@ -9,6 +9,12 @@
     margin-top: 20%;
 }
 
+
+/* fix menu title link not clickable */
+.top-bar .title-area {
+    z-index: 10;
+}
+
 section {
     overflow: hidden;
 }
