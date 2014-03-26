@@ -165,7 +165,7 @@ img.feature-screenshot {
     margin: 10px;
     border-radius: 7px;
     overflow: hidden;
-    background-color: #77357A;
+    background-color: #00B897;
     background-image: url("appstore-button-icons/apple.png");
     background-repeat: no-repeat;
     background-position: 20px center;
@@ -173,8 +173,8 @@ img.feature-screenshot {
 }
 
 .appstore-button:hover {
-    border: 1px solid #aaa;
-    background-color: #632C66;
+    border: 1px solid #00C5A1;
+    background-color: #009E82;
     color: white;
     /*    border: 1px solid #009E82;*/
 
