@@ -1,2 +1,4 @@
 User-agent: *
+
 Disallow: /stoptrackingme/
+Disallow: /impressum-datenschutz.html
