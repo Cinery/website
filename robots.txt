@@ -2,4 +2,3 @@ User-agent: *
 
 Disallow: /stoptrackingme/
 Disallow: /downloads/
-Disallow: /impressum-datenschutz.html
