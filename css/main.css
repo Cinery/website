@@ -73,7 +73,7 @@ body,
 
     margin-bottom: 2.5em;
 
-    background-image: -webkit-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
+    background-image: -webkit-linear-gradient(top, black 30%, rgb(50, 50, 50) 90%);
 
     background-image: -moz-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
 
