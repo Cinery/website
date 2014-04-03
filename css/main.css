@@ -149,15 +149,15 @@ section.page1 * {
 
 }
 
-#claim {
+#claim h1{
 
-    margin-top: 10%;
+    margin-top: 30%;
 
     position: relative;
 
-    font-size: 1.8rem;
+    font-size: 2em;
 
-    line-height: 3.2rem;
+    line-height: 3.5rem;
 
     text-align: center;
 
@@ -173,12 +173,25 @@ section.page1 * {
 
 }
 
-h1.cinery {
+.h1Like {
+
+    color: white !important;
+
+    display: inline;
+    
+    line-height:2;
+
+}
+
+.nav-bar-logo {
 
     color: white !important;
 
     display: inline;
 
+    margin-left: 1em;
+
+    padding-top: 1em;
 }
 
 img.feature-screenshot {
