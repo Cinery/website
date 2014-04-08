@@ -59,6 +59,86 @@ body,
 
 }
 
+/** Social Proof **/
+
+#social_proof a,
+
+#social_proof a:hover {
+
+    color: white;
+}
+
+section#social_proof {
+
+    background-color: #0f0f0f;
+
+}
+
+#social_proof {
+
+    padding-left: 3em;
+    padding-top: 2em;
+
+}
+
+#social_proof blockquote {
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    margin: 0.25em 0;
+
+    padding: 0.25em 40px;
+
+    line-height: 1.6;
+
+    position: relative;
+
+    color: #d0d0d0;
+
+    border: 0px;
+
+}
+
+#social_proof blockquote:before {
+
+    display: block;
+
+    content: "\201C";
+
+    font-size: 80px;
+
+    position: absolute;
+
+    left: -10px;
+
+    top: -20px;
+
+    color: ##d0d0d0;
+
+}
+
+#social_proof blockquote cite {
+
+    color: white;
+
+    font-size: 14px;
+
+    display: block;
+
+    margin-top: 5px;
+
+}
+
+#social_proof blockquote cite:before {
+
+    content: "\2014 \2009";
+
+}
+
 /** FEATURES **/
 
 #features,
@@ -149,7 +229,7 @@ section.page1 * {
 
 }
 
-#claim h1{
+#claim h1 {
 
     margin-top: 30%;
 
@@ -178,8 +258,8 @@ section.page1 * {
     color: white !important;
 
     display: inline;
-    
-    line-height:2;
+
+    line-height: 2;
 
 }
 
@@ -192,6 +272,7 @@ section.page1 * {
     margin-left: 1em;
 
     padding-top: 1em;
+
 }
 
 img.feature-screenshot {
