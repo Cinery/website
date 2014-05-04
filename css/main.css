@@ -20,7 +20,6 @@
 section#page1 {
 
     padding-top: 50px;
-
 }
 
 section .vertical-center-container {
@@ -45,17 +44,7 @@ body,
 
 .imprint > h1 {
 
-    background-image: url(../img/background.jpg);
-
-    background-size: cover;
-
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-
-    background-position: bottom;
-
-    color: white !important;
+    color: black‚ !important;
 
 }
 
@@ -66,20 +55,16 @@ body,
 #social_proof a:hover {
 
     color: white;
-}
-
-/*
-section#social_proof {
-
-    background-color: #0f0f0f;
 
 }
-*/
 
 #social_proof {
 
     padding-left: 3em;
+
     padding-top: 2em;
+
+    background-color: #00B897;
 
 }
 
@@ -99,7 +84,7 @@ section#social_proof {
 
     position: relative;
 
-    color: #d0d0d0;
+    color: #FFFFFF;
 
     border: 0px;
 
@@ -147,32 +132,14 @@ section#social_proof {
 
 .imprint section {
 
-    margin-top: 2.5em;
-
     padding-top: 0.5em;
 
     padding-bottom: 2.5em;
-
-    margin-bottom: 2.5em;
-
-    background-image: -webkit-linear-gradient(top, black 30%, rgb(50, 50, 50) 90%);
-
-    background-image: -moz-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
-
-    background-image: -o-linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
-
-    background-image: linear-gradient(top, rgb(76, 76, 76) 0%, black 100%);
-
-    background-repeat: no-repeat;
-
 }
 
 section.feature {
 
-    margin-top: 2em;
-
-    margin-bottom: 6em;
-
+    margin-bottom: 3em;
 }
 
 .feature h2 {
@@ -180,6 +147,8 @@ section.feature {
     margin-top: 30%;
 
     text-align: left;
+
+    color: black;
 
 }
 
@@ -221,27 +190,28 @@ ul.onepage-pagination li a.active:before {
 
 section.page1 * {
 
-    color: white !important;
-
+    color: black !important;
 }
 
 #iPhone_StartScreen {
-
     position: relative;
-
 }
 
 #claim h1 {
 
-    margin-top: 30%;
+    margin-top: 10%;
 
     position: relative;
 
     font-size: 1.8em;
 
-    line-height: 3.5rem;
+    line-height: 2.8rem;
 
     text-align: center;
+
+    color: black;
+
+    font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 }
 
@@ -251,13 +221,13 @@ section.page1 * {
 
     font-size: 1.3em;
 
-    letter-spacing: 0.2rem;
-
 }
 
 .h1Like {
 
-    color: white !important;
+    /*    color: white !important;*/
+
+    color: black !important;
 
     display: inline;
 
@@ -323,6 +293,8 @@ img.feature-screenshot {
 
     width: 250px;
 
+    height: 80px;
+
     color: white;
 
     margin: 10px;
@@ -339,7 +311,7 @@ img.feature-screenshot {
 
     background-position: 20px center;
 
-    border: 1px solid #fff;
+    border: 1px solid #007863;
 
 }
 
@@ -351,8 +323,6 @@ img.feature-screenshot {
 
     color: white;
 
-    /*    border: 1px solid #009E82;*/
-
 }
 
 .appstore-button:active {
@@ -363,7 +333,7 @@ img.feature-screenshot {
 
 .appstore-button * {
 
-    margin-left: 70px;
+    margin-left: 90px;
 
 }
 
@@ -375,7 +345,7 @@ img.feature-screenshot {
 
     line-height: 1em;
 
-    margin-top: 0.3em;
+    margin-top: 0.7em;
 
 }
 
@@ -407,9 +377,17 @@ section#appstore2 {
 
     margin-bottom: 10%;
 
+    background: #00B897;
+
 }
 
 /* contact section*/
+
+.social-icons {
+
+    font-size: 110px;
+
+}
 
 #contact p {
 
@@ -421,71 +399,9 @@ section#appstore2 {
 
     text-align: center;
 
-    margin-top: 3em;
+    font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-    margin-bottom: 2em;
-
-}
-
-section#story {
-
-    background-color: rgba(208, 208, 208, 0.8);
-
-    padding-bottom: 10%;
-
-}
-
-#story h2 {
-
-    text-align: center;
-
-    margin-top: 3em;
-
-    margin-bottom: 2em;
-
-    color: #404040;
-
-}
-
-@media all and (min-width: 40em) {
-
-    #story p {
-
-        -webkit-column-count: 2;
-
-        /* Chrome, Safari, Opera */
-
-        -moz-column-count: 2;
-
-        /* Firefox */
-
-        column-count: 2;
-
-        -webkit-column-gap: 40px;
-
-        /* Chrome, Safari, Opera */
-
-        -moz-column-gap: 40px;
-
-        /* Firefox */
-
-        column-gap: 40px;
-
-    }
-
-}
-
-#story p {
-
-    color: #404040;
-
-    line-height: 200%;
-
-    text-align: justify;
-
-    padding-left: 5%;
-
-    padding-right: 5%;
+    font-size: 2em;
 
 }
 
@@ -499,17 +415,17 @@ section#story {
 
 section#contact {
 
-    background-image: -webkit-linear-gradient(top, #111 0%, rgb(36, 36, 46) 100%);
+    padding-top: 3em;
 
-    background-image: -moz-linear-gradient(top, #111 0%, rgb(36, 36, 46) 100%);
+    background-color: #007863;
 
-    background-image: -o-linear-gradient(top, #111 0%, rgb(36, 36, 46) 100%);
+    color: white;
 
-    background-image: linear-gradient(top, #111 0%, rgb(36, 36, 46) 100%);
+}
 
-    background-color: #111;
+#contact li {
 
-    padding-bottom: 10%;
+    list-style-type: none;
 
 }
 
