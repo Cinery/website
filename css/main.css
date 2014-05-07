@@ -20,6 +20,7 @@
 section#page1 {
 
     padding-top: 50px;
+
 }
 
 section .vertical-center-container {
@@ -135,11 +136,13 @@ body,
     padding-top: 0.5em;
 
     padding-bottom: 2.5em;
+
 }
 
 section.feature {
 
     margin-bottom: 3em;
+
 }
 
 .feature h2 {
@@ -172,7 +175,11 @@ section.feature {
 
     letter-spacing: 0.05em;
 
-    line-height: 1.4em;
+    line-height: 1.5em;
+
+    margin-top: 20px;
+
+    font-family: "Helvetica-Regular", "Helvetica Regular", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 }
 
@@ -191,10 +198,13 @@ ul.onepage-pagination li a.active:before {
 section.page1 * {
 
     color: black !important;
+
 }
 
 #iPhone_StartScreen {
+
     position: relative;
+
 }
 
 #claim h1 {
@@ -217,7 +227,7 @@ section.page1 * {
 
 .cinery {
 
-    font-family: 'Lobster';
+    font-family: 'Lobster' !important;
 
     font-size: 1.3em;
 
@@ -241,7 +251,9 @@ section.page1 * {
 
     margin-left: 1em;
 
-    padding-top: 1em;
+    padding-top: 2em;
+
+    font-size: 2em !important;
 
 }
 
@@ -297,7 +309,7 @@ img.feature-screenshot {
 
     margin: 10px;
 
-    border-radius: 7px;
+    border-radius: 9px;
 
     overflow: hidden;
 
@@ -357,19 +369,21 @@ img.feature-screenshot {
 
 }
 
-
-
-
 #appstore2 .appstore-button {
+
     background-color: black;
+
     border-color: white;
+
     border-width: 2px;
+
 }
 
 #appstore2 .appstore-button:hover {
-    background-color: #007863;
-}
 
+    background-color: #007863;
+
+}
 
 a.two-row {
 
@@ -384,30 +398,30 @@ a.two-row {
 section#appstore2 {
 
     padding-top: 10%;
+
     padding-bottom: 10%;
+
     background: #00B897;
 
 }
 
 section#appstore2 div div div {
+
     color: white;
+
     font-size: 1.2em;
+
     line-height: 1.3em;
+
     margin-bottom: 0.5em;
+
 }
-
-
-
-
-
-
-
 
 /* contact section*/
 
 .social-icons {
 
-    font-size: 70px;
+    font-size: 80px;
 
 }
 
@@ -451,16 +465,21 @@ section#contact {
 
 }
 
+#contact-links ul {
 
+    font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
 
+    font-size: 1.8em;
 
+    line-height: 1.9em
 
-
-
+}
 
 /* imprint */
 
-.imprint section {
+.imprint,
+
+.presse section {
 
     padding: 10%;
 
@@ -468,13 +487,17 @@ section#contact {
 
 }
 
-.imprint h1 {
+.imprint,
+
+.presse h1 {
 
     text-align: center;
 
-    padding-top: 10%;
+    padding-top: 5%;
 
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+
+    color: black;
 
 }
 
@@ -482,49 +505,101 @@ section#contact {
 
     padding-top: 0.5em;
 
+    color: black;
+
 }
 
+.imprint h3 {
+
+    color: black;
+
+}
+
+/* presse */
+
+#presse h2 {
+
+    padding-top: 0.5em;
+
+    color: black;
+
+    font-size: x-large;
+
+}
 
 #more-features {
+
     margin-top: 10%;
+
 }
 
 #more-features img {
+
     width: 40%;
+
     margin: auto;
+
 }
 
-#more-features .medium-4, #more-features .medium-4 * {
+#more-features .medium-4,
+
+#more-features .medium-4 * {
+
     text-align: center !important;
-    font-size: 1.2rem !important;
-}
 
+    font-size: 1rem !important;
+
+    font-family: "Helvetica-Regular", "Helvetica Regular", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 
 #more-features h2 {
+
     margin-top: 10%;
+
 }
 
 .row {
-    max-width: 80% !important;
-}
 
+    max-width: 80% !important;
+
+}
 
 nav a,
-.top-bar, 
+
+.top-bar,
+
 .top-bar.expanded,
-.top-bar.expanded .title-area
-{
-    background-color: rgba(255,255,255,0.95) !important;
+
+.top-bar.expanded .title-area {
+
+    background-color: rgba(255, 255, 255, 0.95) !important;
+
     color: black !important;
+
+    font-size: 1.8em !important;
+
+    font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+
+    height: 70px;
+
 }
 
-.top-bar-section ul, .nav-bar-logo, .top-bar-section *  {
-    background-color: rgba(255,255,255,0.0) !important;
+.top-bar-section ul,
+
+.nav-bar-logo,
+
+.top-bar-section * {
+
+    background-color: rgba(255, 255, 255, 0.0) !important;
+
 }
 
 @media only screen and (max-width: 40.063em) {
-    #contact ul  {
-        text-align: center;
-    }
-}
 
+    #contact ul {
+
+        text-align: center;
+
+    }
+
+}
