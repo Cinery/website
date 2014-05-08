@@ -1,605 +1,375 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lobster);
-
 .disabled-onepage-scroll section {
-
     overflow: inherit !important;
-
     height: auto !important;
-
 }
 
-/* fix menu title link not clickable */
-
-.top-bar .title-area {
-
-    z-index: 10;
-
-}
 
 section#page1 {
-
-    padding-top: 50px;
-
-}
+    padding-top: 50px;}
 
 section .vertical-center-container {
-
     display: table;
-
     height: 100%;
-
     width: 100%;
-
 }
 
 section .vertical-center {
-
     display: table-cell;
-
     vertical-align: middle;
-
 }
 
 body,
-
 .imprint > h1 {
-
     color: black‚ !important;
-
 }
 
+
+a { color: #00B897; }
+a:hover { color: #007863; }
+a:active { color: #00C5A1; }
+
+
+
+
+
+/** NAVIGATION BAR */
+
+nav a,
+.top-bar,
+.top-bar.expanded,
+.top-bar.expanded .title-area {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    color: black !important;
+    font-size: 1.4em !important;    
+    line-height: 2.4em !important;
+    font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    height: 70px;
+}
+
+.top-bar-section ul,
+.nav-bar-logo,
+.top-bar-section * {
+    background-color: rgba(255, 255, 255, 0.0) !important;
+}
+
+.nav-bar-logo {
+    display: inline;
+    margin-left: 1em;
+    font-size: 2em !important;
+}
+
+/* fix menu title link not clickable */
+.top-bar .title-area {
+    z-index: 10;
+}
+
+
+.top-bar-section ul {
+    display: table;
+    margin: 0 auto;
+}
+
+.top-bar-section ul li {
+    display: table-cell;
+}
+
+
+
+
+	
 /** Social Proof **/
-
 #social_proof a,
-
 #social_proof a:hover {
-
     color: white;
-
 }
 
 #social_proof {
-
     padding-left: 3em;
-
     padding-top: 2em;
-
     background-color: #00B897;
-
 }
 
 #social_proof blockquote {
-
     font-family: Georgia, serif;
-
     font-size: 18px;
-
     font-style: italic;
-
     margin: 0.25em 0;
-
     padding: 0.25em 40px;
-
     line-height: 1.6;
-
     position: relative;
-
     color: #FFFFFF;
-
     border: 0px;
-
 }
 
 #social_proof blockquote:before {
-
     display: block;
-
     content: "\201C";
-
     font-size: 80px;
-
     position: absolute;
-
     left: -10px;
-
     top: -20px;
-
     color: ##d0d0d0;
-
 }
 
 #social_proof blockquote cite {
-
     color: white;
-
     font-size: 14px;
-
     display: block;
-
     margin-top: 5px;
-
 }
 
 #social_proof blockquote cite:before {
-
     content: "\2014 \2009";
-
 }
+
+
+
+
 
 /** FEATURES **/
 
 #features,
-
 .imprint section {
-
     padding-top: 0.5em;
-
     padding-bottom: 2.5em;
-
 }
 
 section.feature {
-
     margin-bottom: 3em;
-
 }
 
 .feature h2 {
-
     margin-top: 30%;
-
     text-align: center;
-
     color: black;
-
 }
 
 @media only screen and (max-width: 40.063em) {
-
     .feature h2 {
-
         margin-top: 3%;
-
     }
-
 }
 
 .feature p {
-
     text-align: center;
-
     font-size: 1.4em;
-
     font-weight: lighter;
-
     letter-spacing: 0.05em;
-
     line-height: 1.5em;
-
     margin-top: 20px;
-
     font-family: "Helvetica-Regular", "Helvetica Regular", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
-
 }
 
-ul.onepage-pagination li a:before {
 
-    background: rgba(204, 204, 204, 0.85);
-
+#more-features {
+    margin-top: 10%;
 }
 
-ul.onepage-pagination li a.active:before {
-
-    border-color: rgba(204, 204, 204, 0.85);
-
+#more-features img {
+    width: 40%;
+    margin: auto;
 }
 
-section.page1 * {
+#more-features .medium-4,
+#more-features .medium-4 * {
+    text-align: center !important;
+    font-size: 1rem !important;
+    font-family: "Helvetica-Regular", "Helvetica Regular", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;}
 
-    color: black !important;
-
+#more-features h2 {
+    margin-top: 10%;
 }
+
+
+
+
+
 
 #iPhone_StartScreen {
-
     position: relative;
-
 }
 
 #claim h1 {
-
     margin-top: 10%;
-
     position: relative;
-
     font-size: 1.8em;
-
     line-height: 2.8rem;
-
     text-align: center;
-
     color: black;
-
     font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
-
 }
 
 .cinery {
-
     font-family: 'Lobster' !important;
-
     font-size: 1.3em;
-
 }
 
 .h1Like {
-
-    /*    color: white !important;*/
-
     color: black !important;
-
     display: inline;
-
     line-height: 2;
-
 }
 
-.nav-bar-logo {
 
-    display: inline;
-
-    margin-left: 1em;
-
-    padding-top: 2em;
-
-    font-size: 2em !important;
-
-}
 
 img.feature-screenshot {
-
     width: 80%;
-
     max-width: 250px;
-
     margin: 10%;
-
-}
-
-.top-bar-section ul {
-
-    display: table;
-
-    margin: 0 auto;
-
-}
-
-.top-bar-section ul li {
-
-    display: table-cell;
-
 }
 
 .webicon.verylarge {
-
     width: 64px;
-
     height: 64px;
-
     -moz-border-radius: 9px;
-
     -webkit-border-radius: 9px;
-
     border-radius: 9px;
-
-}
-
-.appstore-button {
-
-    font-size: 1.8rem;
-
-    display: inline-block;
-
-    width: 250px;
-
-    height: 80px;
-
-    color: white;
-
-    margin: 10px;
-
-    border-radius: 9px;
-
-    overflow: hidden;
-
-    background-color: #00B897;
-
-    background-image: url("appstore-button-icons/apple.png");
-
-    background-repeat: no-repeat;
-
-    background-position: 20px center;
-
-    border: 1px solid #007863;
-
-}
-
-.appstore-button:hover {
-
-    background-color: #009E82;
-
-    color: white;
-
-}
-
-.appstore-button:active {
-
-    color: #ccc;
-
-}
-
-.appstore-button * {
-
-    margin-left: 90px;
-
-}
-
-.appstore-button small {
-
-    text-align: left;
-
-    display: block;
-
-    line-height: 1em;
-
-    margin-top: 0.7em;
-
-}
-
-.appstore-button span {
-
-    display: block;
-
-    text-align: left;
-
-    line-height: 1.3em;
-
-    margin-bottom: 0.2em;
-
-}
-
-#appstore2 .appstore-button {
-
-    background-color: black;
-
-    border-color: white;
-
-    border-width: 2px;
-
-}
-
-#appstore2 .appstore-button:hover {
-
-    background-color: #007863;
-
 }
 
 a.two-row {
-
     margin-top: 0.5em;
-
     font-size: 0.7em !important;
-
     line-height: 1.6em !important;
-
 }
 
 section#appstore2 {
-
     padding-top: 10%;
-
-    padding-bottom: 10%;
-
+    padding-bottom: 6%;
     background: #00B897;
-
 }
 
 section#appstore2 div div div {
-
     color: white;
-
     font-size: 1.2em;
-
     line-height: 1.3em;
-
-    margin-bottom: 0.5em;
-
+    margin-bottom: 1em;
 }
 
-/* contact section*/
+
+
+
+
+
+
+
+/* * *   CONTACT SECTION   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#contact {
+    padding-top: 3em;
+    background-color: #007863;
+    color: white;
+    width: 100%;
+}
+
+#contact,
+#contact * {
+    color: white !important;
+}
 
 .social-icons {
-
     font-size: 80px;
-
 }
 
 #contact p {
-
     text-align: center;
-
 }
 
 #contact h2 {
-
     text-align: center;
-
     font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
-
     font-size: 2em;
-
 }
 
 #contact a,
 
 #contact a:hover {
-
     color: white;
-
 }
 
-section#contact {
 
-    padding-top: 3em;
-
-    background-color: #007863;
-
-    color: white;
-
-}
 
 #contact li {
-
     list-style-type: none;
-
 }
 
 #contact-links ul {
-
     font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.9em;
+    margin-top: 1em;
+}
 
-    font-size: 1.8em;
-
-    line-height: 1.9em
+#contact-links ul li {
+    margin-bottom: 0.2em;
 
 }
 
-/* imprint */
-
-.imprint,
-
-.presse section {
-
-    padding: 10%;
-
-    margin-bottom: 0;
-
-}
-
-.imprint,
-
-.presse h1 {
-
-    text-align: center;
-
-    padding-top: 5%;
-
-    padding-bottom: 5%;
-
-    color: black;
-
-}
-
-.imprint h2 {
-
-    padding-top: 0.5em;
-
-    color: black;
-
-}
-
-.imprint h3 {
-
-    color: black;
-
-}
-
-/* presse */
-
-#presse h2 {
-
-    padding-top: 0.5em;
-
-    color: black;
-
-    font-size: x-large;
-
-}
-
-#more-features {
-
-    margin-top: 10%;
-
-}
-
-#more-features img {
-
-    width: 40%;
-
-    margin: auto;
-
-}
-
-#more-features .medium-4,
-
-#more-features .medium-4 * {
-
-    text-align: center !important;
-
-    font-size: 1rem !important;
-
-    font-family: "Helvetica-Regular", "Helvetica Regular", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-#more-features h2 {
-
-    margin-top: 10%;
-
-}
-
-.row {
-
-    max-width: 80% !important;
-
-}
-
-nav a,
-
-.top-bar,
-
-.top-bar.expanded,
-
-.top-bar.expanded .title-area {
-
-    background-color: rgba(255, 255, 255, 0.95) !important;
-
-    color: black !important;
-
-    font-size: 1.8em !important;
-
-    font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-
-    height: 70px;
-
-}
-
-.top-bar-section ul,
-
-.nav-bar-logo,
-
-.top-bar-section * {
-
-    background-color: rgba(255, 255, 255, 0.0) !important;
-
-}
 
 @media only screen and (max-width: 40.063em) {
-
     #contact ul {
-
         text-align: center;
-
     }
 
 }
+
+
+
+/* * *   IMRPINT   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.imprint section,
+.presse section {
+    padding: 10%;
+    margin-bottom: 0;
+}
+
+.imprint section,
+.presse h1 {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: black;
+}
+
+.imprint h2 {
+    padding-top: 0.5em;
+    color: black;
+}
+
+.imprint h3 {
+    color: black;
+}
+
+
+
+
+
+/* * *   PRESSE   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#presse h2 {
+    padding-top: 0.5em;
+    color: black;
+    font-size: x-large;
+}
+
+
+.presse .appstore-button {
+    background-image:none; 
+    padding-top: 10px; 
+    margin-top:20px;
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+.row {
+    max-width: 80% !important;
+}
+

@@ -1,0 +1,54 @@
+
+
+.appstore-button {
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 250px;
+    height: 80px;
+    color: white;
+    margin: 10px;
+    border-radius: 9px;
+    overflow: hidden;
+    background-color: #00B897;
+    background-image: url("appstore-button-icons/apple.png");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    border: 1px solid #007863;
+}
+
+.appstore-button:hover {
+    background-color: #009E82;
+    color: white;
+}
+
+.appstore-button:active {
+    color: #ccc;
+}
+
+.appstore-button * {
+    margin-left: 90px;
+}
+
+.appstore-button small {
+    text-align: left;
+    display: block;
+    line-height: 1em;
+    margin-top: 0.7em;
+}
+
+.appstore-button span {
+    display: block;
+    text-align: left;
+    line-height: 1.3em;
+    margin-bottom: 0.2em;
+}
+
+#appstore2 .appstore-button {
+    background-color: black;
+    border-color: white;
+    border-width: 2px;
+}
+
+#appstore2 .appstore-button:hover {
+    background-color: #007863;
+}
