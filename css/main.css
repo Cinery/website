@@ -6,6 +6,13 @@
 }
 
 
+@viewport {
+	width: device-width;
+	zoom:1;
+    user-zoom:fixed;
+}
+
+
 section#page1 {
     padding-top: 50px;}
 
@@ -89,6 +96,7 @@ nav a,
     padding-left: 3em;
     padding-top: 2em;
     background-color: #00B897;
+    overflow: hidden;
 }
 
 #social_proof blockquote {
