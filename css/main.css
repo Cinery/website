@@ -49,10 +49,9 @@ nav a,
 .top-bar.expanded .title-area {
     background-color: rgba(255, 255, 255, 0.95) !important;
     color: black !important;
-    font-size: 1.4em !important;    
-    line-height: 2.4em !important;
+    font-size: 1.4rem !important;    
+    line-height: 2.4rem !important;
     font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-    height: 70px;
 }
 
 .top-bar-section ul,
@@ -67,11 +66,17 @@ nav a,
     font-size: 2em !important;
 }
 
-/* fix menu title link not clickable */
+
 .top-bar .title-area {
-    z-index: 10;
+    z-index: 10; /* fix menu title link not clickable */
+    margin-top: 1.0em;
 }
 
+@media only screen and (min-width: 40.063em) {
+    .top-bar-section ul {
+        margin-right: 5% !important;
+    }
+}
 
 .top-bar-section ul {
     display: table;
@@ -80,6 +85,19 @@ nav a,
 
 .top-bar-section ul li {
     display: table-cell;
+    margin-top: 1.0em;
+}
+
+li.menu-icon {
+    margin-top: -30px !important;
+}
+
+@media only screen and (max-width: 40.063em) {
+    .top-bar-section ul li {
+        display: block;
+        text-align: right;
+        padding-right: 25px;
+    }
 }
 
 
