@@ -408,13 +408,13 @@ section#appstore2 div div div {
 
 /* * *   IMRPINT   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.imprint section,
+section.imprint ,
 .presse section {
     padding: 10%;
     margin-bottom: 0;
 }
 
-.imprint section,
+ section.imprint,
 .presse h1 {
     text-align: center;
     padding-top: 5%;
