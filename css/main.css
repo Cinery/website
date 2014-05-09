@@ -352,16 +352,17 @@ section#appstore2 div div div {
 }
 
 #donation ul>:first-child {
-    margin-top: 1.3em;
+    margin-top: 1.1em;
 }
 
 #donation li {
-    margin-top: 2em;
-    line-height: 2em;
+    margin-top: 1.3em;
+    line-height: 1.3em;
     text-align: center;
 }
 
 #donation h2 {
+    font-size: 1.2rem;
     text-align: right;
 }
 
@@ -375,12 +376,12 @@ section#appstore2 div div div {
     border: none;
     
     font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: 1.1em;
-    padding-left: 1.3em;
+    padding-left: 1.4em;
     
 }    
 
