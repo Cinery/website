@@ -57,7 +57,7 @@
         
          <p style="font-size:1.4em;">Benjamin Burzan<br><a href="mailto:benjamin@cinery.de">benjamin@cinery.de</a><br>0178 146 7331</p><hr style="width:40%;">
 
-        <a class="appstore-button" href="https://www.cinery.de/presse/Cinery-Pressekit.zip" download>
+        <a id="preesekit-download-button" class="appstore-button" href="https://www.cinery.de/presse/Cinery-Pressekit.zip" title="Pressekit herunterladen" download>
             Pressekit herunterladen
         </a>
 <!--        <p style="padding-top: 20px; color:gray; width:250px;">Enthält Presserelease, Gründungsgeschichte, Potrait vom Team und Bilder zur App</p>-->
@@ -103,7 +103,7 @@
                                 <h2>Bleibe mit uns in Kontakt!</h2>
                                 <div class="small-6 medium-3 columns">
                                     <p>
-                                        <a href="https://www.facebook.com/CineryApp" target="_blank">
+                                        <a href="https://www.facebook.com/CineryApp" title="Cinery auf Facebook" target="_blank">
                                             <i class="fi-social-facebook social-icons"></i>
                                         </a>
                                     </p>
@@ -111,7 +111,7 @@
 
                                 <div class="small-6 medium-3 columns">
                                     <p>
-                                        <a href="https://twitter.com/cineryapp" target="_blank">
+                                        <a href="https://twitter.com/cineryapp" title="Cinery bei Twitter" target="_blank">
                                             <i class="fi-social-twitter social-icons"></i>
                                         </a>
                                     </p>
@@ -119,7 +119,7 @@
 
                                 <div class="small-6 medium-3 columns">
                                     <p>
-                                        <a href="https://plus.google.com/+CineryDe" target="_blank">
+                                        <a href="https://plus.google.com/+CineryDe" title="Cinery auf Google+" target="_blank">
                                             <i class="fi-social-google-plus social-icons"></i>
                                         </a>
                                     </p>
@@ -127,7 +127,7 @@
 
                                 <div class="small-6 medium-3 columns end">
                                     <p>
-                                        <a href="mailto:hallo@cinery.de?subject=Kontakt%20via%20cinery.de" target="_blank">
+                                        <a href="mailto:hallo@cinery.de?subject=Kontakt%20via%20cinery.de" title="Cinery per E-Mail kontaktieren" target="_blank">
                                             <i class="fi-mail social-icons"></i>
                                         </a>
                                     </p>
@@ -161,6 +161,21 @@
     <script src="js/foundation.min.js "></script>
     <script>
         $(document).foundation();
+                
+        $('#preesekit-download-button').on('click', function() {
+            ga('send', 'event', 'Download Buttons', 'click', $(this).attr('title'));
+        });
+        
+        $("#contact a[target='_blank']").not('a[id^="appstore-button"]').on('click', function() {
+            var linkTitle = $(this).attr('title') || $(this).attr('href')    
+            ga('send', 'event', 'Social Buttons', 'click', linkTitle);
+        });
+
+        $("a[target='_blank']").not('a[id^="appstore-button"]').on('click', function() {
+            var linkTitle = $(this).attr('title') || $(this).attr('href')    
+            ga('send', 'event', 'external links', 'click', linkTitle);
+        });
+
     </script>
 
     <script>
