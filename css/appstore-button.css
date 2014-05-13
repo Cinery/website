@@ -52,3 +52,25 @@
 #appstore2 .appstore-button:hover {
     background-color: #007863;
 }
+
+
+
+
+/* * * Andriod button * * */
+
+#appstore-button-andriod {
+    background-image: url('appstore-button-icons/and.png'); 
+    height: 60px;
+    width: 180px;
+    background-color: #7E7E7E;
+    font-size: 1.3rem;
+    border-color: black;
+}
+
+#appstore-button-andriod:hover {
+    background-color: #5E5E5E;
+}
+
+.appstore-button * {
+    margin-left: 75px;
+}

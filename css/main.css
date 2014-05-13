@@ -467,3 +467,41 @@ section.imprint ,
     max-width: 80% !important;
 }
 
+
+
+/* * * LAUNCHROCK * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#lr-widget {
+    height: 760px;   
+}
+
+#lr-widget div#content {
+    background-color: rgba(255,255,255,0.0) !important;
+}
+
+div.LR-pwd-lr.LR-clearfix {
+    display: none;
+}
+
+div.LR-deviceOne-wrapper,
+.LR-box-shadow {
+    display: none;
+}
+
+
+
+
+input.LR-sign-up-input.signup-email {
+    height: 100% !important;
+}
+
+input[type="submit"].LR-sign-up-submit {
+    background-color: #00B897 !important;
+    background-image: none !important;
+}
+
+input[type="submit"].LR-sign-up-submit:hover, 
+input[type="submit"].LR-sign-up-submit[disabled] {
+    background-color: #009E82 !important;
+    background-image: none !important;
+}
