@@ -102,6 +102,14 @@ li.menu-icon {
 
 
 
+@media only screen and (min-width: 40.063em) {
+    section#page1 {
+        padding-bottom: 5%;   
+    }
+}
+
+
+
 
 	
 /** Social Proof **/
