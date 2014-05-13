@@ -282,6 +282,10 @@ section#appstore2 div div div {
 
 /* * *   CONTACT SECTION   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+footer {
+    overflow: hidden;
+}
+
 #contact {
     padding-top: 3em;
     background-color: #007863;
