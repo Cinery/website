@@ -31,19 +31,6 @@
     <meta property="og:title" content="Cinery - Kinoprogramm-App für Deutschland auf deinem iPhone - Android coming soon" />
     <meta property="og:description" content="Cinery, ist die Kino-App für dein iPhone, die dir 5 sehenswerte Filme empfiehlt und zusätzlich, das aktuelle Kinoprogramm in deiner Nähe zeigt." />
 
-
-    <script>
-        $(document).ready(function() {
-            $(".nav-button").on('click', function(e) {
-                e.preventDefault();
-                var href = $($(this).attr('href')).selector;
-                jQuery('html, body').animate({
-                    scrollTop: $('a[name=' + href.replace('#', '') + ']').offset().top - 100.0
-                });
-            });
-        });
-    </script>
-
 </head>
 
 <body>
