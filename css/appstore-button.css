@@ -74,3 +74,14 @@
 .appstore-button * {
     margin-left: 75px;
 }
+
+
+
+/* * * Pressekit button * * */
+
+#pressekit-download-button {
+    height: 70px;
+    width: 170px;
+    font-size: 1.3em;
+    line-height: 1.2em;
+}
