@@ -460,12 +460,34 @@ section.imprint ,
 .presse .appstore-button {
     background-image:none; 
     padding-top: 10px; 
-    margin-top:20px;
+    margin-top: 10px;
 }
 
+#team_press p {
 
+    color: #404040;
+    line-height: 200%;
+}
 
+#presse .content {
+    padding-top: 7%;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: justify;
+}
 
+#presse ul {
+    padding-left: 3%;
+}
+
+.tabs dd {
+    float: none;
+    display: inline-block;
+}
+
+dl.tabs {
+    text-align: center;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
