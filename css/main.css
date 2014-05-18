@@ -399,6 +399,7 @@ footer {
 
 #paypal-button {
     background-image: url(http://uxrepo.com/static/icon-sets/zocial/svg/paypal.svg);
+    cursor: pointer;
 }
 
 #flattr-button {
