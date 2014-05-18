@@ -157,7 +157,7 @@
 
                                 </li>
                                 <li>
-                                    <a id="flattr-button" class="donation-button" href="https://flattr.com/submit/auto?user_id=CineryApp&url=https%3A%2F%2Fwww.cinery.de" target="_blank">mit Flattr spenden</a>
+                                    <a id="flattr-button" class="donation-button" href="https://flattr.com/profile/cineryapp" target="_blank">mit Flattr spenden</a>
                                 </li>
                             </ul>
                         </div>
@@ -174,21 +174,21 @@
         <script>
             $(document).foundation();
 
-            $('#appstore-button-1').on('click', function() {
+            $('#appstore-button-1').on('click', function () {
                 ga('send', 'event', 'AppStore Buttons', 'click', 'appstore-button top');
             });
 
-            $('#appstore-button-2').on('click', function() {
+            $('#appstore-button-2').on('click', function () {
                 ga('send', 'event', 'AppStore Buttons', 'click', 'appstore-button bottom');
             });
 
 
-            $("#contact a[target='_blank']").not('a[id^="appstore-button"]').on('click', function() {
+            $("#contact a[target='_blank']").not('a[id^="appstore-button"]').on('click', function () {
                 var linkTitle = $(this).attr('title') || $(this).attr('href')
                 ga('send', 'event', 'Social Buttons', 'click', linkTitle);
             });
 
-            $("a[target='_blank']").not('a[id^="appstore-button"]').on('click', function() {
+            $("a[target='_blank']").not('a[id^="appstore-button"]').on('click', function () {
                 var linkTitle = $(this).attr('title') || $(this).attr('href')
                 ga('send', 'event', 'external links', 'click', linkTitle);
             });
@@ -205,9 +205,9 @@
                 window[disableStr] = true;
             }
 
-            (function(i, s, o, g, r, a, m) {
+            (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
+                i[r] = i[r] || function () {
                     (i[r].q = i[r].q || []).push(arguments)
                 }, i[r].l = 1 * new Date();
                 a = s.createElement(o),
