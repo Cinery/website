@@ -398,12 +398,12 @@ footer {
 }    
 
 #paypal-button {
-    background-image: url(http://uxrepo.com/static/icon-sets/zocial/svg/paypal.svg);
+    background-image: url(/img/paypal.svg);
     cursor: pointer;
 }
 
 #flattr-button {
-     background-image: url(http://uxrepo.com/static/icon-sets/zocial/svg/flattr.svg);
+     background-image: url(/img/flattr.svg);
 }
 
 @media only screen and (max-width: 40.063em) {
