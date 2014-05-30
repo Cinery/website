@@ -135,7 +135,30 @@
     margin-left: 75px;
 }
 
+/* * * Android Light button * * */
 
+#appstore-button-android-light {
+    background-image: url('appstore-button-icons/and.png'); 
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 180px;
+/*    background-color: #7E7E7E;*/
+    background-color:rgba(126, 126, 126, 0.5);
+    font-size: 1.3rem;
+    border-color: black;
+}
+
+#appstore-button-android-light:hover {
+   background-color:rgba(126, 126, 126, 0.6);
+}
+
+.#appstore-button-android-light:active {
+    background-color:rgba(126, 126, 126, 0.4);
+}
+
+.appstore-button-light * {
+    margin-left: 75px;
+}
 
 /* * * Pressekit button * * */
 
