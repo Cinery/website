@@ -12,6 +12,10 @@
     user-zoom:fixed;
 }
 
+.main{
+position: absolute;
+top: 0;
+}
 
 section#page1 {
     padding-top: 50px;}
