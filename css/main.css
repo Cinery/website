@@ -161,13 +161,28 @@ li.menu-icon {
     content: "\2014 \2009";
 }
 
+#social_proof .headline{
+    font-size: 1.5em;
+    color:white;
+    padding-bottom: 2%;
+    text-align:center;
+}
+
+#social_proof .cinery{
+    font-size: 1.2em;
+}
 
 
 /* * *   OPEN AIR   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 #openAir {
-    height: 800px;
+    height: 100vh;
+/*    height: 800px;*/
     position: relative;
     font-family: "Helvetica-Regular", "Helvetica Regular", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#openAir .appstore-button-light {
+    margin-top: 3%;
 }
 
 #openAir h1 {
@@ -179,9 +194,8 @@ li.menu-icon {
     display: inline-block;
 	width: 100%;
     height: 100%;
-	vertical-align: middle;
 	background-size: cover;
-	background-position: 50% 50%;
+    background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -313,15 +327,16 @@ a.two-row {
 }
 
 section#appstore2 {
-    padding-top: 10%;
-    padding-bottom: 6%;
-    background: #00B897;
+    padding-top: 0%;
+    padding-bottom: 5%;
+/*    background: #00B897;*/
+    background: white;
 }
 
 section#appstore2 div div div {
-    color: white;
+    color: black;
     font-size: 1.2em;
-    line-height: 1.3em;
+    line-height: 2em;
     margin-bottom: 1em;
 }
 
