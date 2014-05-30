@@ -217,6 +217,14 @@ li.menu-icon {
     display: inline-block;
 }
 
+#openAir #creditsOpenAirImage{
+    font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color:#A4A4A4;
+    font-size: 0.9em;
+    position: absolute;
+    right: 1%;
+    top:50%;
+}
 
 
 /** FEATURES **/
