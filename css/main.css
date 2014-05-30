@@ -194,7 +194,7 @@ li.menu-icon {
     background-image: url("/img/Freiluftkino_Kreuzberg_large.jpg");
     display: inline-block;
 	width: 100%;
-    height: 100%;
+    height: 100vh;
 	background-size: cover;
     background-position: center;
 	background-repeat: no-repeat;
