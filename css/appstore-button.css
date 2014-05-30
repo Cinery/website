@@ -1,4 +1,5 @@
 
+/* * * Green App Store button * * */
 
 .appstore-button {
     font-size: 1.8rem;
@@ -54,6 +55,62 @@
 }
 
 
+/* * * Light App Store button * * */
+
+.appstore-button-light {
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 250px;
+    height: 80px;
+    color: white;
+    margin: 10px;
+    border-radius: 9px;
+    overflow: hidden;
+    background-color:rgba(255, 255, 255, 0.4);
+    background-image: url("appstore-button-icons/apple.png");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+
+.appstore-button-light:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.appstore-button-light:active {
+    background-color:rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.appstore-button-light * {
+    margin-left: 90px;
+}
+
+.appstore-button-light small {
+    text-align: left;
+    display: block;
+    line-height: 1em;
+    margin-top: 0.7em;
+}
+
+.appstore-button-light span {
+    display: block;
+    text-align: left;
+    line-height: 1.3em;
+    margin-bottom: 0.2em;
+}
+
+/**????????*/
+#appstore3 .appstore-button-light {
+    background-color: black;
+    border-color: white;
+    border-width: 2px;
+}
+
+#appstore3 .appstore-button-light:hover {
+    background-color: #007863;
+}
+/**????????*/
 
 
 /* * * Android button * * */
