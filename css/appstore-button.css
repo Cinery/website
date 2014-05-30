@@ -44,6 +44,8 @@
     margin-bottom: 0.2em;
 }
 
+/* * * Black App Store button * * */
+
 #appstore2 .appstore-button {
     background-color: black;
     border-color: white;
@@ -51,7 +53,8 @@
 }
 
 #appstore2 .appstore-button:hover {
-    background-color: #007863;
+/*    background-color: #007863;*/
+    background-color: #686868;
 }
 
 
@@ -66,19 +69,20 @@
     margin: 10px;
     border-radius: 9px;
     overflow: hidden;
-    background-color:rgba(255, 255, 255, 0.4);
+    background-color:rgba(255, 255, 255, 0.5);
     background-image: url("appstore-button-icons/apple.png");
     background-repeat: no-repeat;
     background-position: 20px center;
+    border: 1px solid #FFFFFF;
 }
 
 .appstore-button-light:hover {
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:rgba(255, 255, 255, 0.6);
     color: white;
 }
 
 .appstore-button-light:active {
-    background-color:rgba(255, 255, 255, 0.3);
+    background-color:rgba(255, 255, 255, 0.4);
     color: white;
 }
 
