@@ -44,76 +44,43 @@
     margin-bottom: 0.2em;
 }
 
+
+
 /* * * Black App Store button * * */
 
-#appstore2 .appstore-button {
+.appstore-button.black {
     background-color: black;
     border-color: white;
     border-width: 2px;
 }
 
-#appstore2 .appstore-button:hover {
+.appstore-button.black:hover {
     background-color: #686868;
 }
 
 
 /* * * Light App Store button * * */
 
-.appstore-button-light {
-    font-size: 1.8rem;
-    display: inline-block;
-    width: 250px;
-    height: 80px;
+
+
+.appstore-button.light {
     color: white;
-    margin: 10px;
-    border-radius: 9px;
-    overflow: hidden;
-    background-color:rgba(132, 132, 132, 0.5);
-    background-image: url("appstore-button-icons/apple.png");
-    background-repeat: no-repeat;
+    background-color:rgba(132, 132, 132, 0.7);
     background-position: 20px center;
     border: 1px solid #FFFFFF;
 }
 
-.appstore-button-light:hover {
-    background-color:rgba(132, 132, 132, 0.6);
-    color: white;
+.appstore-button.light:hover {
+    background-color:rgba(132, 132, 132, 0.8);
 }
 
-.appstore-button-light:active {
-    background-color:rgba(132, 132, 132, 0.4);
-    color: white;
+.appstore-button.light:active {
+    background-color:rgba(132, 132, 132, 1.0);
 }
 
-.appstore-button-light * {
-    margin-left: 90px;
-}
 
-.appstore-button-light small {
-    text-align: left;
-    display: block;
-    line-height: 1em;
-    margin-top: 0.7em;
-}
 
-.appstore-button-light span {
-    display: block;
-    text-align: left;
-    line-height: 1.3em;
-    margin-bottom: 0.2em;
-}
 
-/**????????*/
-#appstore3 .appstore-button-light {
-    background-color: black;
-    border-color: white;
-    border-width: 2px;
-}
-
-#appstore3 .appstore-button-light:hover {
-    background-color: #007863;
-}
-/**????????*/
 
 
 /* * * Android button * * */
@@ -131,34 +98,34 @@
     background-color: #5E5E5E;
 }
 
-.appstore-button * {
+#appstore-button-android * {
     margin-left: 75px;
 }
 
+
+
 /* * * Android Light button * * */
 
-#appstore-button-android-light {
+#appstore-button-android.light {
     background-image: url('appstore-button-icons/and.png'); 
     background-repeat: no-repeat;
     height: 60px;
     width: 180px;
 /*    background-color: #7E7E7E;*/
-    background-color:rgba(126, 126, 126, 0.5);
+    background-color:rgba(126, 126, 126, 0.7);
     font-size: 1.3rem;
     border-color: black;
+    opacity: 0.9;
 }
 
-#appstore-button-android-light:hover {
-   background-color:rgba(126, 126, 126, 0.6);
+#appstore-button-android.light:hover, 
+#appstore-button-android.light:active {
+    background-color:rgba(126, 126, 126, 0.8);
+    opacity: 1.0;
 }
 
-.#appstore-button-android-light:active {
-    background-color:rgba(126, 126, 126, 0.4);
-}
 
-.appstore-button-light * {
-    margin-left: 75px;
-}
+
 
 /* * * Pressekit button * * */
 
