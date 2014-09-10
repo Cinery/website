@@ -179,9 +179,22 @@ li.menu-icon {
 
 /* * *   OPEN AIR   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 #openAir {
-    height: 100vh;
+    height: auto;
     position: relative;
     font-family: "Helvetica-Regular", "Helvetica Regular", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-bottom: 3em;
+    
+}
+
+#openAir p {
+    color: black;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 1.3em;
+    line-height: 2em;
+    padding-left: 15%;
+    padding-right: 15%;
+
+/*    text-shadow: 0px 0px 0.2em #000;*/
 }
 
 #openAir .appstore-button-light {
@@ -189,8 +202,9 @@ li.menu-icon {
 }
 
 #openAir h1 {
-    color: white;
-    text-shadow: 0px 0px 0.2em #000;
+    color: black;
+/*    text-shadow: 0px 0px 0.2em #000;*/
+    font-size: 1.4em !important;
 }
 
 #openAirImage {    
@@ -239,10 +253,7 @@ li.menu-icon {
     text-shadow: 0px 0px 0.5em #000;
 }
 
-/*inline css hack for safari*/
-#openAir .vertical-center-container {
-    height: 100vh;
-}
+
 
 @media only screen 
 and (max-width: 40.063em) {
@@ -317,13 +328,12 @@ section.feature {
     margin-top: 10%;
 }
 
-
-
-
-
-
 #iPhone_StartScreen {
     position: relative;
+    max-width: 80%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    padding-top: 50px;
 }
 
 #claim h1 {
@@ -334,6 +344,11 @@ section.feature {
     text-align: center;
     color: black;
     font-family: "Helvetica-Light", "Helvetica Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#openAir #appstore-buttons{
+    margin-top: 40%;
+    position: relative;
 }
 
 .cinery {
@@ -393,7 +408,7 @@ footer {
 
 #contact {
     padding-top: 3em;
-    background-color: #007863;
+    background-color: #CCCCCC;
     color: white;
     width: 100%;
 }
@@ -447,7 +462,36 @@ footer {
         text-align: center;
     }
 
+    #iPhone_StartScreen {
+        max-width: 50%;
+        height: auto;
+        width: auto\9; /* ie8 */
+/*        margin-left: 1em;*/
+        margin-top: 2em;
+    } 
+    #openAir p {
+        font-size: 1em;
+    }
+    #openAir #appstore-buttons{
+    margin-top: 10%;
+    position: relative;
 }
+}
+
+@media only screen and (max-width: 64em) { 
+    #iPhone_StartScreen {
+        max-width: 50%;
+        height: auto;
+        width: auto\9; /* ie8 */    
+        
+    } 
+    #openAir p {
+        font-size: 1em;
+    }
+
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
 
 
 /* * *   DONATION   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */

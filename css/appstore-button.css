@@ -79,8 +79,33 @@
 }
 
 
+/* * * Blue CINEPASS button * * */
 
+.appstore-button.blue {
+    background-color: #4695BE;
+    border-color: white;
+    border-width: 2px;
+    background-image: none !important;
+    padding-top: 10px; 
+}
 
+.appstore-button.blue:hover {
+    background-color: #6ba5d0;
+}
+
+.appstore-button.blue small {
+    text-align: center !important;
+    display: block;
+    line-height: 1em;
+    margin-top: 0.7em;
+}
+
+.appstore-button.blue span {
+    display: block;
+    text-align: center !important;
+    line-height: 1.3em;
+    margin-bottom: 0.2em;
+}
 
 
 /* * * Android button * * */
